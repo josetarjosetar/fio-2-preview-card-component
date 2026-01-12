@@ -36,6 +36,10 @@ body {
   overflow: clip;
 }
 
+.product-pic {
+  width: 100%;
+}
+
 .product-img {
   width: 100%;
 }
@@ -134,15 +138,14 @@ p {
   .card {
     display: flex;
     width: 600px;
+    max-height: 450px;
+  }
+
+  .product-pic {
+    width: 50%;
   }
 
   .product-img {
-    display: none;
-  }
-
-  .product-img-desktop {
-    display: block;
-    width: 50%;
-    object-fit: cover;
+    height: 100%;
   }
 }
