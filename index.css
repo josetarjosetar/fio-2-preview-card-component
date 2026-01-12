@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-cream: hsl(30, 38%, 92%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(212, 21%, 14%);
+  --color-grey: hsl(228, 12%, 48%);
+  --color-green-500: hsl(158, 36%, 37%);
+  --color-green-700: hsl(158, 42%, 18%);
+}
+
+.container {
+  height: 100%;
+  background-color: var(--color-cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 85%;
+  width: 350px;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  overflow: clip;
+}
+
+.product-img {
+  width: 100%;
+}
+
+.product-img-desktop {
+  display: none;
+}
+
+.content {
+  padding: 24px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.category {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 500;
+  color: var(--color-black);
+  margin-top: 0px;
+}
+
+.title {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-black);
+  line-height: 100%;
+}
+
+.description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-grey);
+  line-height: 150%;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.discount-price {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-green-500);
+}
+
+.price {
+  font-family: "Montsterrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: line-through;
+  color: var(--color-grey);
+}
+
+.action-btn {
+  border-radius: 8px;
+  height: 48px;
+  background-color: var(--color-green-500);
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-btn:hover {
+  background-color: var(--color-green-700);
+}
+
+.btn-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: var(--color-white);
+}
+
+@media (min-width: 680px) {
+  .card {
+    display: flex;
+    width: 600px;
+  }
+
+  .product-img {
+    display: none;
+  }
+
+  .product-img-desktop {
+    display: block;
+    width: 50%;
+    object-fit: cover;
+  }
+}
